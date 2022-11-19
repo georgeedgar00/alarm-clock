@@ -7,30 +7,21 @@
     --app-light-bg: #f0f4f6;
 }
 
-body{
-  margin: 0%;
-  padding: 0%;
-  background: black;
+body {
+  background-color: var(--app-dark-bg);
 }
+
 .container{
   padding: 30px;
   color: var(--app-light-bg);
-  font-weight: bold;
+  width: min(100% - 30px, 1080px);
+  font-weight: 400;
   position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  font-size: 150px;
-  white-space: nowrap;
+  margin-top: 150px;
+  font-size: 100px;
 }
-body {
-margin: 0;
-padding: 0;
-background-color: var(--app-dark-bg);
-}
+ button{
+  background-color: var(--app-red);
+  color:var(--app-light-bg);
+ }
 
-.hours, .minutes, .seconds {
-  font-size: 180px; 
-  margin: 10px 0;
-  color: #f2f4f6;
-}
