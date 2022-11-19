@@ -14,7 +14,7 @@ body {
 .container{
   padding: 30px;
   color: var(--app-light-bg);
-  width: min(100% - 30px, 1080px);
+  width: 100%;
   font-weight: 400;
   position: absolute;
   margin-top: 150px;
