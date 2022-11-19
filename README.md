@@ -3,4 +3,4 @@
   ## Alarm Clock
   By George Edgar
 
-Checkout the site [here](https:/georgeedgar00/.github.io/alarm-clock/) 
+Checkout the site [here](https://georgeedgar00.github.io/alarm-clock/) 
