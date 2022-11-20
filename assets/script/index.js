@@ -1,8 +1,8 @@
 'use strict';
 
 const display = document.getElementById('clock');
-let alarmTime = null;
-let alarmTimeout = null;
+let alarmTime;
+let alarmTimeout;
 
 function updateTime() {
     const date = new Date();
@@ -21,31 +21,6 @@ function formatTime(time) {
         return '0' + time;
     }
     return time;
-}
-
-function setAlarmTime(value) {
-    alarmTime = value;
-}
-
-function setAlarm() {
-    if(alarmTime) {
-        const current = new Date();
-        const timeToAlarm = new Date(alarmTime);
-
-        if (timeToAlarm > current) {
-            const timeout = timeToAlarm.getTime() - current.getTime();
-            alarmTimeout = setTimeout(() => audio.play(), timeout);
-            alert('Alarm set');
-        }
-    }
-}
-
-function clearAlarm() {
-    audio.pause();
-    if (alarmTimeout) {
-        clearTimeout(alarmTimeout);
-        alert('Alarm cleared');
-    }
 }
 
 setInterval(updateTime, 1000);
